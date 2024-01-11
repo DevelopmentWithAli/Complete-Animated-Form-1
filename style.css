@@ -1,0 +1,190 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: url(assets/pexels-george-ketselashvili-725743.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.login-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding: 40px;
+    background: rgba(0, 0, 0, .5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    border-radius: 10px;
+}
+
+.login-form .user-box {
+    position: relative;
+
+}
+
+.login-form .user-box input {
+    width: 100%;
+    /* height: 50px; */
+    /* border: none; */
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+
+
+}
+
+h2 {
+    color: #fff;
+    text-align: center;
+}
+
+.login-form .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* right:0;
+    bottom:0; */
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.login-form .user-box input:focus~label,
+.login-form .user-box input:valid~label {
+    top: -20px;
+    left: 0;
+    color: #03e9f5;
+    font-size: 12px;
+}
+
+.login-form form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f5;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+}
+
+.login-form a:hover {
+    background: #03e9f5;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f5,
+        0 0 25px #03e9f5,
+        0 0 50px #03e9f5,
+        0 0 15px #03e9f5;
+}
+.login-form a span{
+    position: absolute;
+    /* top: 0;
+    right: 0; */
+    display: block;
+}
+.login-form span:nth-child(1){
+    top: 0;
+    left: -100;
+    width: 100%;
+    height:2px;
+    background:linear-gradient(90deg,transparent, #03e9f5);
+    animation: btn-animate1 1s linear infinite;
+}
+@keyframes btn-animate1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+.login-form a span:nth-child(2){
+    bottom: -100;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background:linear-gradient(180deg,transparent, #03e9f5);
+    animation: btn-animate2 1s linear infinite;
+    animation-delay: .25s;
+}
+@keyframes btn-animate2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+.login-form a span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background:linear-gradient(270deg,transparent, #03e9f5);
+    animation: btn-animate3 1s linear infinite;
+    animation-delay: .25s;
+}
+@keyframes btn-animate3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+.login-form a span:nth-child(4){
+    bottom: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background:linear-gradient(360deg,transparent, #03e9f5);
+    animation: btn-animate4 1s linear infinite;
+    animation-delay: .25s;
+}
+@keyframes btn-animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}
+h6 a{
+    color: white;
+    text-decoration: 2px double red;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: lowercase;
+
+}
+h6{
+    text-align: center;
+    padding: 3px;
+    margin: 3px;
+}
